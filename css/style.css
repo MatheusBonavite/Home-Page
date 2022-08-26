@@ -41,11 +41,6 @@ p {
 	font-size: 1.25em;
 }
 
-img{
-	justify-self: center;
-	align-self: center;
-}
-
 .slide-bar{
 	margin-top: 1em;
 	width: 75%;
@@ -157,7 +152,9 @@ img{
 	height: fit-content;
 	border-left: 15px solid var(--principal-color);
 	border-radius: 100%;
+	width: 415px;
 	height: 400px;
+	background-color: var(--principal-color);
 }
 
 @media only screen and (max-width: 1100px){
