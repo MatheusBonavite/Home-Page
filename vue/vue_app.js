@@ -1,7 +1,8 @@
 const App = Vue.createApp({
     data() {
       return {
-        underLayerPosition: "under-layer pos-1"
+        underLayerPosition: "under-layer pos-1",
+        selected: "about-me-card"
       };
     },
     methods: {
@@ -15,4 +16,11 @@ App.component('sidebar-button', {
     props: [],
     data(){}
 })
+
+App.component('about-me-card', {
+  template: "#about-me-card",
+  props: [],
+  data(){}
+})
+
 App.mount("#app");

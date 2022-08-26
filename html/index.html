@@ -19,12 +19,25 @@
             <sidebar-button @updatepos="updateUnderLayerPosition(4)"><span>Research</span></sidebar-button>
             <div :class="underLayerPosition"></div>
         </div>
+        <component :is="selected"></component>
+
     </div>
+    
     <script id="sidebar-button" type="text/x-template">
         <button class="sidebar-button" @click="$emit('updatepos')">
-          <slot></slot>
+            <slot></slot>
         </button>
-      </script>
+    </script>
+
+    <script id="about-me-card" type="text/x-template">
+        <div class="about-me-grid">
+            <img class="my-picture" src="../assets/36443980.jpeg" style="border-radius: 50%;"/>
+            <div class="my-description">
+                <h1>Matheus Bonavite dos Reis Cardoso</h1>
+            </div>
+        </div>
+    </script>
+
     <script src="https://unpkg.com/vue@next"></script>
     <script src="../vue/vue_app.js"></script>
 </body>
