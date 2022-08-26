@@ -36,7 +36,7 @@ App.component('work', {
       companies: [
         {
           name: "Inspr",
-          date: "Oct/2021",
+          date: "Oct/2021 (Current)",
           title: "Software Developer"
         },
         {
