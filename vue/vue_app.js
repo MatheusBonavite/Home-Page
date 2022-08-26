@@ -23,4 +23,16 @@ App.component('about-me-card', {
   data(){}
 })
 
+App.component('my-git', {
+  template: "#my-github",
+  props: [],
+  data(){}
+})
+
+App.component('my-linkedin', {
+  template: "#my-linkedin",
+  props: [],
+  data(){}
+})
+
 App.mount("#app");

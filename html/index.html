@@ -23,7 +23,6 @@
             <div :class="underLayerPosition"></div>
         </div>
         <component :is="selected"></component>
-
     </div>
     
     <script id="sidebar-button" type="text/x-template">
@@ -45,6 +44,38 @@
                 <p>Today, I'm a Software Developer at <a href="https://inspr.com/">Inspr</a>, responsible for maintaining the front-end code of both Inspr and our main clients using <a href="https://nextjs.org/">Next.js</a>.</p>
             </div>
         </div>
+        <div class="where-to-find">
+            <a href="https://github.com/MatheusBonavite">
+                <my-git style="width: 32px; height: 32px;"/>
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-bonavite-cardoso/" style="margin-left: 0.5em;">
+                <my-linkedin style="width: 32px; height: 32px;"/>
+            </a>
+        </div>
+    </script>
+
+    <script id="my-github" type="text/x-template">
+        <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 32 32" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs/>
+            <clipPath id="ArtboardFrame">
+            <rect height="32" width="32" x="0" y="0"/>
+            </clipPath>
+            <g clip-path="url(#ArtboardFrame)" id="Untitled" vectornator:layerName="Untitled">
+            <path d="M16.0168-0.0069879C7.18167-0.0069879 0.0182847 7.33769 0.0182847 16.3984C0.0182847 23.6464 4.60233 29.7947 10.9603 31.9649C11.7608 32.115 12.0525 31.6085 12.0525 31.1734C12.0525 30.7846 12.0388 29.7524 12.0309 28.3837C7.58045 29.3747 6.64144 26.1843 6.64144 26.1843C5.91362 24.2889 4.86459 23.7844 4.86459 23.7844C3.41187 22.7672 4.9746 22.7874 4.9746 22.7874C6.58055 22.9032 7.42525 24.4783 7.42525 24.4783C8.85243 26.9849 11.1705 26.2608 12.082 25.8409C12.2274 24.7814 12.6399 24.0583 13.0976 23.6484C9.5449 23.2345 5.8095 21.8266 5.8095 15.5404C5.8095 13.7498 6.43321 12.2855 7.4567 11.1384C7.29168 10.7235 6.74261 9.05577 7.61287 6.79686C7.61287 6.79686 8.95655 6.35577 12.0132 8.47871C13.2892 8.11414 14.6584 7.93288 16.0188 7.92682C17.3772 7.93288 18.7464 8.11414 20.0243 8.47871C23.079 6.35577 24.4198 6.79686 24.4198 6.79686C25.293 9.05577 24.7439 10.7235 24.5789 11.1384C25.6043 12.2855 26.2241 13.7498 26.2241 15.5404C26.2241 21.8427 22.4828 23.2295 18.9183 23.6353C19.4929 24.1419 20.0047 25.1429 20.0047 26.6737C20.0047 28.8661 19.985 30.6356 19.985 31.1734C19.985 31.6125 20.2728 32.1231 21.0851 31.9629C27.4381 29.7886 32.0183 23.6444 32.0183 16.3984C32.0183 7.33769 24.8539-0.0069879 16.0168-0.0069879" fill="#90dfce" fill-rule="evenodd" opacity="1" stroke="none"/>
+            </g>
+        </svg>
+    </script>
+
+    <script id="my-linkedin" type="text/x-template">
+        <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 24 24" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs/>
+            <clipPath id="ArtboardFrame">
+            <rect height="24" width="24" x="0" y="0"/>
+            </clipPath>
+            <g clip-path="url(#ArtboardFrame)" id="Untitled" vectornator:layerName="Untitled">
+            <path d="M4.98 2.60094C4.98 4.0425 3.87 5.21058 2.5 5.21058C1.13 5.21058 0.02 4.0425 0.02 2.60094C0.02 1.16041 1.13-0.00870684 2.5-0.00870684C3.87-0.00870684 4.98 1.16041 4.98 2.60094ZM5 7.29829L1.86265e-08 7.29829L1.86265e-08 24L5 24L5 7.29829ZM12.982 7.29829L8.014 7.29829L8.014 24L12.983 24L12.983 15.2326C12.983 10.3578 19.012 9.95908 19.012 15.2326L19.012 24L24 24L24 13.4247C24 5.1991 15.078 5.49868 12.982 9.5478C12.982 9.5478 12.982 7.29829 12.982 7.29829Z" fill="#90dfce" fill-rule="evenodd" opacity="1" stroke="none"/>
+            </g>
+        </svg>
     </script>
 
     <script src="https://unpkg.com/vue@next"></script>

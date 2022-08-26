@@ -90,6 +90,11 @@ p {
 	border-radius: 1em;
 }
 
+.where-to-find {
+	width: 75%;
+	margin: 0.25em 0;
+}
+
 .sidebar-button, .under-layer{
 	position: relative;
 	background: transparent;
@@ -229,7 +234,7 @@ p {
 
 
 @media only screen and (max-width: 800px){
-	.about-me-grid, .slide-bar{
+	.about-me-grid, .slide-bar, .where-to-find {
 		width: calc(100% - 1em);
 		margin: 0.5em 0.5em;
 	}
