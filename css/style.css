@@ -10,16 +10,16 @@ body{
 	--darker-principal-color: #05ad88;
 }
 
-a, .date, .job-title {
+a, .date, .job-title, .tech {
 	color: var(--darker-principal-color);
 	text-decoration: none;
 }
 
-.date, .job-title {
+.date, .job-title, .tech {
 	cursor: default;
 }
 
-a:hover, .date:hover, .job-title:hover {
+a:hover, .date:hover, .job-title:hover, .tech:hover {
 	animation-name: border-link-thickness;
 	animation-duration: 0.2s;
 	animation-timing-function: linear;

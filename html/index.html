@@ -59,6 +59,7 @@
             <div v-for="(company, index) in companies" class="company">
                 <h2 class="company-name">{{company.name}}</h2>
                 <span class="date">{{company.date}}</span> <span class="job-title" style="margin-left: 0.5em;">{{company.title}}</span>
+                <p v-for="(cvalue, index) in company.content" v-html="cvalue"/>
             </div>
         </div>
     </script>
