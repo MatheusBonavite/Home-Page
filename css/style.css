@@ -34,6 +34,7 @@ body{
 }
 
 .sidebar-button, .under-layer{
+	position: relative;
 	background: transparent;
 	box-shadow: 0 transparent;
 	border: 0 solid transparent;
@@ -82,7 +83,6 @@ body{
 }
 
 .under-layer{
-	position: relative;
 	background-color: #90dfce;
 	width: 25%;
 	height: 100%;
