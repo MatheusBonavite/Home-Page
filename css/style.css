@@ -30,7 +30,7 @@ h1::after {
 	content:'';
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1250px){
 	h1::after{
 		width: 100%;
 	}
@@ -119,7 +119,13 @@ p {
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+}
+
+@media only screen and (max-width: 1700px){
+	.about-me-grid{
+		gap: 1em;
+	}
 }
 
 .my-description{
