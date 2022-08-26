@@ -56,8 +56,9 @@
 
     <script id="work" type="text/x-template">
         <div class="companies-list">
-            <div v-for="(company, index) in companies">
-                {{company.name}} | {{company.date}} | {{company.title}}
+            <div v-for="(company, index) in companies" class="company">
+                <h2 class="company-name">{{company.name}}</h2>
+                <span class="date">{{company.date}}</span> <span class="job-title" style="margin-left: 0.5em;">{{company.title}}</span>
             </div>
         </div>
     </script>
