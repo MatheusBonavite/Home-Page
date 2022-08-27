@@ -11,6 +11,8 @@ const App = Vue.createApp({
           this.selected = "about-me-card"
         if(num == 2)
           this.selected = "work"
+        if(num == 3)
+          this.selected = "projects"
         this.underLayerPosition = `under-layer pos-${num}`
       }
     }
@@ -97,6 +99,29 @@ App.component('work', {
           `, `
             I got hired for this position after obtain good grades on the Digital Systems and Computer Architecture subjects.
           `]
+        }
+      ]
+    }
+  }
+})
+
+App.component('projects', {
+  template: "#projects",
+  props: [],
+  data(){
+    return {
+      projects: [
+        {
+          name: "Inspr",
+        },
+        {
+          name: "Embraer",
+        },
+        {
+          name: "SYDLE",
+        },
+        {
+          name: "UFMG",
         }
       ]
     }
