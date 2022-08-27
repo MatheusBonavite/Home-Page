@@ -78,17 +78,25 @@ App.component('work', {
           name: "SYDLE",
           date: "May/2020 - Abr/2021",
           title: "Software Developer Intern",
-          content: `
-
-          `
+          content: [`
+            Hired to work under a 30 hours per week contract. My team was hired to maintain and develop the digital certificate emission rules for the Serasa company.
+          `, `
+            Another amazing company, at the time I had no experience in software development professionaly nor knew anything about <span class="tech">JavaScript</span>, here I learned all about JavaScript and other concepts
+            (like paginations and simple queries with <span class="tech">ElasticSearch</span>). My job was to write JavaScript functions using SYDLE ONE, a company framework. It was a really good job to learn how to program with JavaScript.
+          `]
         },
         {
           name: "UFMG",
           date: "Oct/2018 - Dec/2019",
           title: "Teaching Assistant",
-          content: `
-
-          `
+          content: [`
+            Hired to work under a 12 hours per week contract.
+          `, `
+            I was hired to help other students learn the <span class="tech">VHDL</span> hardware description language. Some of my duties were to help other students
+            understand concepts better and help them with assignments, like projecting a single cycle processor using VHDL.
+          `, `
+            I got hired for this position after obtain good grades on the Digital Systems and Computer Architecture subjects.
+          `]
         }
       ]
     }

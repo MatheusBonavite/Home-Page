@@ -179,8 +179,8 @@ p {
 
 .companies-list {
 	width: 75%;
-	height: 30em;
-	margin-top: 3em;
+	height: fit-content;
+	margin: 3em 0;
 }
 
 @media only screen and (max-width: 350px){
