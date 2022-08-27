@@ -72,8 +72,8 @@ App.component('work', {
             Also improved queries written in the <span class="tech">SQL</span> language (using <span class="tech">MySQL</span> as a DBMS), and from time to time had to write <span class="tech">PHP</span> code to fix minor bugs in the back-end.
           `,
           `
-            Working here was an amazing opportunity, since Embraer stored all its code in local servers, my superiors decided to avoid installing dependencies so all of the "CCPM" code was very
-            back-bones, once packages, libraries, or frameworks (like Angular, React, or Vue) were forbidden. This way, I've learned much about the old fashioned ways of creating websites (not even JQuery was allowed).
+            Working here was an amazing opportunity, since Embraer stored all its code in local servers, my superiors decided to avoid installing dependencies so all of the "CCPM" could not have any npm
+            shenanigans, once packages, libraries, or frameworks could have many dependencies or vulnerabilities. This way, I've learned much about the old fashioned ways of creating websites (not even JQuery was allowed).
           `]
         },
         {
