@@ -258,8 +258,8 @@ p {
 		grid-column-end: 2;
 	}
 
-	.my-project-wrapper, .my-picture-wrapper, img{
-		display: none;
+	.square-img-holder, .my-project-wrapper, .my-picture-wrapper, img{
+		display: none !important;
 	}
 
 }

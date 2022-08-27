@@ -75,14 +75,14 @@
                             <img :src="picture" style="width: 380px; height: 380px;" v-if="project.whichPicture == i"/>
                         </div>
                     </div>
-                    <div style="display: flex; justify-content: center;">
+                    <div class="square-img-holder" style="display: flex; justify-content: center;">
                         <div 
                             v-for="(picture, i) in project.pictures"
                             :class="project.whichPicture == i ? 'square-img square-active' : 'square-img'"
                             @click="updatePicture(index, i)"/>
                     </div>
                     <div class="my-description">
-                        <h1>{{project.name}}</h1>
+                        <h2>{{project.name}}</h2>
                         <p>Hi! My name is Mathes Bonavite, I'm a brazillian developer who lives in Belo Horizonte, Brazil!</p>
                         <p>In 2019 I've started learning development for the Web, and in 2020 I did an exchange program at Southeast Missouri State University (<a href="https://semo.edu/">SEMO</a>) being named to the 2020 Dean's List ✨</p>
                         <p>In 2022 I have received a B.S. in Control and Automation Engineering from Federal University of Minas Gerais (<a href="https://ufmg.br/international-visitors">UFMG</a>), being awarded the Hugo Sepúlveda's silver medal 🥈 for the second best grade in my class. </p>
