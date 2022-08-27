@@ -116,19 +116,13 @@ p {
 	text-align: center;
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 480px){
 	.sidebar-button{
 		font-size: 0.75em;
 	}
 }
 
-@media only screen and (max-width: 330px){
-	.sidebar-button{
-		font-size: 0.65em;
-	}
-}
-
-@media only screen and (max-width: 299px){
+@media only screen and (max-width: 350px){
 	.sidebar-button{
 		font-size: 0.6em;
 	}
@@ -201,7 +195,7 @@ p {
 	}
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 310px){
 	.about-me-grid, .project-grid {
 		height: 50em;
 	}

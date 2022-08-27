@@ -116,14 +116,18 @@ App.component('projects', {
     return {
       projects: [
         {
-          name: "MicroTEDAclus",
+          name: "microTEDAclus",
           pictures: [
             "../assets/projects/micro_after_first_macro.png",
             "../assets/projects/micro_after_second_macro.png",
             "../assets/projects/classified_samples.png"
           ],
           description: `
-          
+          <p>The microTEDAclus algorithm is used for clustering data, it was officially proposed in a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167739X19312786?via%3Dihub">paper</a> written by one of my professors.</p>
+          <p>Originally, the algorithm was designed in Python. However, on this project I have translated it to the <span class="tech">C</span> programming language, corrected some errors in the original approach, and did all the mathematical proofs for the equations.</p>
+          <p>After translating the algorithm, I've made sure it had no memory leaks using <span class="tech">Valgrind</span>, and used the <span class="tech">Catch2</span> library to test the code.
+          <p>Finally, to plot what you are seeing I've used <span class="tech">Python</span> for its simplicity, using matplotlib to do the cluster analysis.</p>
+          <p><a href="https://github.com/MatheusBonavite/TEDA---TCC">Check the source code here!</a></p>
           `,
           whichPicture: 0,
         },
@@ -134,7 +138,12 @@ App.component('projects', {
             "../assets/projects/36443980.jpeg"
           ],
           description: `
-          
+          <p>This home-page is another project that I'm proud of...</p>
+          <p>This website is much more than a <span class="tech">Vue.js</span> website, I had the opportunity to practice many concepts that usually don't go into the mind of front-end engineers/developers.</p>
+          <p>I've made an Ubuntu droplet at Digital Ocean and installed a lot of things in it.</p>
+          <p>Manually added things like <span class="tech">pm2</span>, a process manager to run node and express easily, installed firewalls, used <span class="tech">certbot</span> to have https enabled, disabled root access, and many more features. </p> 
+          <p>The front-end part of the application and the express web server that serves it is available in the source code!</p>
+          <p><a href="https://github.com/MatheusBonavite/Home-Page">Check the source code here!</a></p>
           `,
           whichPicture: 0,
         }
