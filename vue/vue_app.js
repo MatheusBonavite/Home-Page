@@ -64,10 +64,10 @@ App.component('work', {
           content: [`
             Hired to work under a 30 hours per week contract. I was hired to help maintain and improve the "CCPM" internal product built at Embraer to organize and schedule the delivery of projects.
           `, `
-            Most often I spent my days fixing bugs or implementing features on the front-end part of the application, written in plain <span class="tech"> JavaScript </span>, <span class="tech"> HTML </span>, and <span class="tech">CSS</span>.
+            Most often I spent my days fixing bugs or implementing features on the front-end part of the application, written in plain <span class="tech"> JavaScript </span>, <span class="tech">HTML</span>, and <span class="tech">CSS</span>.
           `,
           `
-            Also improved queries written in the <span class="tech">SQL</span> language (using <span class="tech">MySQL</span> as a DBMS), and from time to time had to write <span class="tech"> PHP </span> code to fix minor bugs in the back-end.
+            Also improved queries written in the <span class="tech">SQL</span> language (using <span class="tech">MySQL</span> as a DBMS), and from time to time had to write <span class="tech">PHP</span> code to fix minor bugs in the back-end.
           `,
           `
             Working here was an amazing opportunity, since Embraer stored all its code in local servers, my superiors decided to avoid installing dependencies so all of the "CCPM" code was very
