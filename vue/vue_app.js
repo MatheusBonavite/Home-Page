@@ -21,13 +21,17 @@ const App = Vue.createApp({
 App.component('sidebar-button', {
     template: "#sidebar-button",
     props: [],
-    data(){}
+    data(){
+      return {}
+    }
 })
 
 App.component('about-me-card', {
   template: "#about-me-card",
   props: [],
-  data(){}
+  data(){
+    return {}
+  }
 })
 
 App.component('work', {
@@ -112,18 +116,34 @@ App.component('projects', {
     return {
       projects: [
         {
-          name: "Inspr",
+          name: "MicroTEDAclus",
+          pictures: [
+            "../assets/projects/micro_after_first_macro.png",
+            "../assets/projects/micro_after_second_macro.png",
+            "../assets/projects/classified_samples.png"
+          ],
+          description: `
+          
+          `,
+          whichPicture: 0,
         },
         {
-          name: "Embraer",
-        },
-        {
-          name: "SYDLE",
-        },
-        {
-          name: "UFMG",
+          name: "Home-Page",
+          pictures: [
+            "../assets/projects/digitalocean.jpeg",
+            "../assets/projects/36443980.jpeg"
+          ],
+          description: `
+          
+          `,
+          whichPicture: 0,
         }
       ]
+    }
+  },
+  methods: {
+    updatePicture(index, num){
+      this.projects[index].whichPicture = num;
     }
   }
 })
@@ -131,13 +151,17 @@ App.component('projects', {
 App.component('my-git', {
   template: "#my-github",
   props: [],
-  data(){}
+  data(){
+    return {}
+  }
 })
 
 App.component('my-linkedin', {
   template: "#my-linkedin",
   props: [],
-  data(){}
+  data(){
+    return {}
+  }
 })
 
 App.mount("#app");
