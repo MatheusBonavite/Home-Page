@@ -13,6 +13,8 @@ const App = Vue.createApp({
           this.selected = "work"
         if(num == 3)
           this.selected = "projects"
+        if(num == 4)
+          this.selected = "research"
         this.underLayerPosition = `under-layer pos-${num}`
       }
     }
@@ -153,6 +155,40 @@ App.component('projects', {
   methods: {
     updatePicture(index, num){
       this.projects[index].whichPicture = num;
+    }
+  }
+})
+
+App.component('research', {
+  template: '#research',
+  props: [],
+  data(){
+    return {
+      papers: [
+        {
+          name: "A New PRNG Hardware Architecture Based on an Exponential Chaotic Map",
+          date: "2021",
+          editor: "IEEE",
+          doi: "10.1109/ISCAS51556.2021.9401653",
+          link: "https://ieeexplore.ieee.org/document/9401653",
+          description: `
+            <p>On this paper I've had the idea to analyse if it was possible to generate chaos by approximating Euler's number in the exponential logistic map equation using Horner's method to compute this numbers approximation with MacLaurin series.</p>
+            <p>It turns out this was possible! The resulting design was generated using <span class="tech">VHDL</span> and it was tested in a Xilinx Artix 7 FPGA board.</p>
+          `
+        },
+        {
+          name: "A new floating-point adder FPGA-based implementation using RN-coding of numbers",
+          date: "2021",
+          editor: "Elsevier",
+          doi: "https://doi.org/10.1016/j.compeleceng.2020.106947",
+          link: "https://www.sciencedirect.com/science/article/abs/pii/S004579062030793X",
+          description: `
+            <p>On this paper I have helped my colleague Túlio Araújo on the design of a new adder that followed the RN-coding of numbers pattern, instead of the traditional IEEE-754.</p>
+            <p>I have helped him test and compare his design against the ones used in the industry. And also heped him analyse the results and error distribution.</p>
+            <p>I have also proposed the xor-tree approach with a phantom-bit, that sped up the process of calculating the sign bit of an RN number.</p>
+            `
+        }
+      ]
     }
   }
 })

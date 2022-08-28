@@ -91,6 +91,18 @@
         </div>
     </script>
 
+    <script id="research" type="text/x-template">
+        <div class="papers-list">
+            <div v-for="(paper, index) in papers" class="paper">
+                <h2 class="paper-name">{{paper.name}}</h2>
+                <span class="paper-title">{{paper.editor}}</span>
+                <span class="date" style="margin-left: 0.5em;">{{paper.date}}</span> 
+                <a class="doi" style="margin-left: 0.5em;" :href="paper.link">DOI: {{paper.doi}}</a>
+                <div v-html="paper.description"/>
+            </div>
+        </div>
+    </script>
+
     <script id="my-github" type="text/x-template">
         <svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 32 32" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs/>

@@ -3,6 +3,7 @@
 }
   
 body{
+	font-size: 16px;
 	margin: 0;
 	padding:0;
 	--pos-translate-x: 0%;
@@ -10,16 +11,16 @@ body{
 	--darker-principal-color: #05ad88;
 }
 
-a, .date, .job-title, .tech {
+a, .date, .job-title, .tech, .paper-title {
 	color: var(--darker-principal-color);
 	text-decoration: none;
 }
 
-.date, .job-title, .tech {
+.date, .job-title, .paper-title, .tech {
 	cursor: default;
 }
 
-a:hover, .date:hover, .job-title:hover, .tech:hover {
+a:hover, .date:hover, .job-title:hover, .tech:hover, .paper-title:hover {
 	animation-name: border-link-thickness;
 	animation-duration: 0.2s;
 	animation-timing-function: linear;
@@ -175,7 +176,7 @@ p {
 	width: 100%;
 }
 
-.companies-list, .projects-list {
+.companies-list, .projects-list, .papers-list {
 	width: 75%;
 	height: fit-content;
 	margin: 3em 0;
@@ -260,7 +261,7 @@ p {
 
 
 @media only screen and (max-width: 800px){
-	.about-me-grid, .slide-bar, .where-to-find, .companies-list, .projects-list {
+	.about-me-grid, .slide-bar, .where-to-find, .companies-list, .projects-list, .papers-list {
 		width: calc(100% - 1em);
 		margin: 0.5em 0.5em;
 	}
@@ -276,4 +277,10 @@ p {
 
 .square-active{
 	background-color: var(--darker-principal-color);
+}
+
+@media only screen and (max-width: 370px){
+	.doi{
+		display: none;
+	}
 }
