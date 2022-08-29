@@ -159,7 +159,7 @@ p {
 
 .about-me-grid, .project-grid {
 	width: 75%;
-	height: 30em;
+	height: fit-content;
 	margin-top: 3em;
 	border: 1px solid black;
 	border-bottom: 3px solid black;
@@ -170,6 +170,7 @@ p {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(1, 1fr);
+	gap: 1em;
 }
 
 .project-grid{
@@ -188,24 +189,6 @@ p {
 
 .projects-list{
 	margin-bottom: 3em;
-}
-
-@media only screen and (max-width: 350px){
-	.about-me-grid, .project-grid {
-		height: 32em;
-	}
-}
-
-@media only screen and (max-width: 310px){
-	.about-me-grid, .project-grid {
-		height: 50em;
-	}
-}
-
-@media only screen and (max-width: 1700px){
-	.about-me-grid, .project-grid{
-		gap: 1em;
-	}
 }
 
 .my-description{
@@ -243,7 +226,7 @@ p {
 @media only screen and (max-width: 1100px){
 	.about-me-grid, .project-grid{
 		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
 	}
 
 	.my-description{
